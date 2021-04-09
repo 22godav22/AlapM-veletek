@@ -7,11 +7,19 @@ import javax.swing.JTextField;
  * @author hallgato
  */
 public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
+
     public OraiFeladatAlsosSzamolas() {
         initComponents();
     }
 
-   int x = 0,y = 0,jo=0;
+    private int szamol() {
+        eredmeny = osztando / oszto;
+
+        return eredmeny;
+
+    }
+    int x = 0, y = 0, jo = 0, osztando, oszto, eredmeny;
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -335,38 +343,57 @@ public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
     }//GEN-LAST:event_jText4ActionPerformed
 
     private void menuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem4ActionPerformed
- JTextField jTF=jText1;
+        JTextField jTF = jText1;
         JTextField jTF1 = jText2;
-         JTextField jTF2 = jText10;
-        jTF1.setText("25/5");
-jTF.setText(menuItem4.getText());
-++y;
-jTF2.setText("" + y);
+        JTextField jTF2 = jText10;
+        
+     double r= (Math.random())*100;
+       
+		int n = 1; 
+		int ker = 0; //Amiről el szeretnénk dönteni, hogy van-e ilyen
+ 
+		int i = 0;
+		while(i<n && r != ker)
+			i++;
+ 
+		if(i<n){
+			System.out.println("Van ilyen szám."+r);
+                        r= (Math.random())*100;}
+                else
+			System.out.println("Nincs ilyen szám."+r);
+                
+                
+        oszto =(int)r;
+        osztando = (int)r;
+        jTF1.setText(osztando + "/" + oszto);
+        jTF.setText(menuItem4.getText());
+        ++y;
+        jTF2.setText("" + y);
     }//GEN-LAST:event_menuItem4ActionPerformed
-    
+
     private void ellenorzesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ellenorzesActionPerformed
         JTextField jTF = jText3;
         JTextField jTF2 = jText4;
         JTextField jTF3 = jText9;
         JTextField jTF4 = jText8;
-        
 
         String ellen;
         ellen = jTF.getText();
         int i;
         i = Integer.parseInt(ellen);
-        if (i == 5) {
+
+        if (i == szamol()) {
             jTF2.setText("helyes");
-             ++jo;
+            ++jo;
         } else {
             jTF2.setText("rossz");
         }
         ++x;
         jTF3.setText("" + x);
-        
-  double sz = ((x *jo)*0.01);
-    
-  jTF4.setText(""+sz);
+
+        double sz = ((x * jo) * 0.01);
+
+        jTF4.setText("" + sz);
     }//GEN-LAST:event_ellenorzesActionPerformed
 
     private void jText1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText1ActionPerformed
@@ -374,8 +401,8 @@ jTF2.setText("" + y);
     }//GEN-LAST:event_jText1ActionPerformed
 
     private void segitsegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segitsegActionPerformed
-                JTextField jTF = jText5;
-                jTF.setText("5");
+        JTextField jTF = jText5;
+        jTF.setText("5");
     }//GEN-LAST:event_segitsegActionPerformed
 
     /**
