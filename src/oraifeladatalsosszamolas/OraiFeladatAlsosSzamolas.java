@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package oraifeladatalsosszamolas;
 
 import javax.swing.JTextField;
@@ -12,67 +7,63 @@ import javax.swing.JTextField;
  * @author hallgato
  */
 public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
-
-    /**
-     * Creates new form NewJFrame
-     */
     public OraiFeladatAlsosSzamolas() {
         initComponents();
     }
 
-   int x = 0,y = 0;
+   int x = 0,y = 0,jo=0;
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
+        jText8 = new javax.swing.JTextField();
+        jText9 = new javax.swing.JTextField();
+        jText10 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        jText7 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        ellenorzes = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        jText2 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        jText3 = new javax.swing.JTextField();
+        jText4 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
-        jTextField5 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
+        jText5 = new javax.swing.JTextField();
+        segitseg = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
+        ujFrladat = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        jText1 = new javax.swing.JTextField();
+        menuBar = new javax.swing.JMenuBar();
+        menu = new javax.swing.JMenu();
+        menuItem1 = new javax.swing.JMenuItem();
+        menuItem2 = new javax.swing.JMenuItem();
+        menuItem3 = new javax.swing.JMenuItem();
+        menuItem4 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Alapműveletek gyakolása");
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Statisztika"));
 
         jLabel7.setText("Befejezéskor az elért eredményt százalékosan:");
 
-        jTextField8.setEditable(false);
-        jTextField8.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField8.setText("0");
+        jText8.setEditable(false);
+        jText8.setBackground(new java.awt.Color(204, 204, 204));
+        jText8.setText("0");
 
-        jTextField9.setEditable(false);
-        jTextField9.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField9.setText("0");
+        jText9.setEditable(false);
+        jText9.setBackground(new java.awt.Color(204, 204, 204));
+        jText9.setText("0");
 
-        jTextField10.setEditable(false);
-        jTextField10.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField10.setText("0");
+        jText10.setEditable(false);
+        jText10.setBackground(new java.awt.Color(204, 204, 204));
+        jText10.setText("0");
 
         jLabel4.setText("Hány kérdés volt összesen  eddig?");
 
@@ -80,8 +71,8 @@ public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
 
         jLabel6.setText("A fenti eredményeket alapműveletekre lebontva:");
 
-        jTextField7.setEditable(false);
-        jTextField7.setBackground(new java.awt.Color(204, 204, 204));
+        jText7.setEditable(false);
+        jText7.setBackground(new java.awt.Color(204, 204, 204));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -96,10 +87,10 @@ public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
                     .addComponent(jLabel7))
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField8)
-                    .addComponent(jTextField7)
-                    .addComponent(jTextField9)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jText8)
+                    .addComponent(jText7)
+                    .addComponent(jText9)
+                    .addComponent(jText10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -108,55 +99,55 @@ public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jText10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jText9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jText7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jText8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        jButton1.setText("ellenőrzés");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        ellenorzes.setText("ellenőrzés");
+        ellenorzes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                ellenorzesActionPerformed(evt);
             }
         });
 
         jLabel2.setText("kérdés:");
 
-        jTextField2.setEditable(false);
-        jTextField2.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jText2.setEditable(false);
+        jText2.setBackground(new java.awt.Color(204, 204, 204));
+        jText2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jText2ActionPerformed(evt);
             }
         });
 
         jLabel3.setText("=");
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        jText3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                jText3ActionPerformed(evt);
             }
         });
 
-        jTextField4.setEditable(false);
-        jTextField4.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField4.setText("még nem volt válasz");
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        jText4.setEditable(false);
+        jText4.setBackground(new java.awt.Color(204, 204, 204));
+        jText4.setText("még nem volt válasz");
+        jText4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                jText4ActionPerformed(evt);
             }
         });
 
@@ -168,15 +159,15 @@ public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jText2, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jText3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addComponent(ellenorzes)
                 .addGap(14, 14, 14)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jText4, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -185,23 +176,23 @@ public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jText3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ellenorzes)
+                    .addComponent(jText4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        jTextField5.setEditable(false);
-        jTextField5.setBackground(new java.awt.Color(204, 204, 204));
+        jText5.setEditable(false);
+        jText5.setBackground(new java.awt.Color(204, 204, 204));
 
-        jButton3.setText("kérem a megoldást");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        segitseg.setText("kérem a megoldást");
+        segitseg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                segitsegActionPerformed(evt);
             }
         });
 
@@ -212,32 +203,32 @@ public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField5))
+                    .addComponent(segitseg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jText5))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton3)
+                .addComponent(segitseg)
                 .addGap(36, 36, 36)
-                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addComponent(jText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        jButton2.setText("új feladat");
+        ujFrladat.setText("új feladat");
 
         jLabel1.setText("feladat :");
 
-        jTextField1.setEditable(false);
-        jTextField1.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField1.setText("művelet");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        jText1.setEditable(false);
+        jText1.setBackground(new java.awt.Color(204, 204, 204));
+        jText1.setText("művelet");
+        jText1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                jText1ActionPerformed(evt);
             }
         });
 
@@ -251,49 +242,49 @@ public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton2))
+                        .addComponent(jText1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ujFrladat))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(18, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jText1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
+                .addComponent(ujFrladat)
                 .addGap(22, 22, 22))
         );
 
-        jMenu1.setText("Alapműveletek");
+        menu.setText("Alapműveletek");
 
-        jMenuItem1.setText("összeadás");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        menuItem1.setText("összeadás");
+        menuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                menuItem1ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        menu.add(menuItem1);
 
-        jMenuItem2.setText("kivonás ");
-        jMenu1.add(jMenuItem2);
+        menuItem2.setText("kivonás ");
+        menu.add(menuItem2);
 
-        jMenuItem3.setText("szorzás");
-        jMenu1.add(jMenuItem3);
+        menuItem3.setText("szorzás");
+        menu.add(menuItem3);
 
-        jMenuItem4.setText("osztás");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        menuItem4.setText("osztás");
+        menuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                menuItem4ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem4);
+        menu.add(menuItem4);
 
-        jMenuBar1.add(jMenu1);
+        menuBar.add(menu);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(menuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -313,51 +304,51 @@ public class OraiFeladatAlsosSzamolas extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void menuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_menuItem1ActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jText2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_jText2ActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void jText3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_jText3ActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void jText4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_jText4ActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
- JTextField jTF=jTextField1;
-        JTextField jTF1 = jTextField2;
-         JTextField jTF2 = jTextField10;
+    private void menuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem4ActionPerformed
+ JTextField jTF=jText1;
+        JTextField jTF1 = jText2;
+         JTextField jTF2 = jText10;
         jTF1.setText("25/5");
-jTF.setText(jMenuItem4.getText());
+jTF.setText(menuItem4.getText());
 ++y;
 jTF2.setText("" + y);
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_menuItem4ActionPerformed
     
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JTextField jTF = jTextField3;
-        JTextField jTF2 = jTextField4;
-        JTextField jTF3 = jTextField9;
-        JTextField jTF4 = jTextField8;
+    private void ellenorzesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ellenorzesActionPerformed
+        JTextField jTF = jText3;
+        JTextField jTF2 = jText4;
+        JTextField jTF3 = jText9;
+        JTextField jTF4 = jText8;
         
 
         String ellen;
@@ -366,22 +357,26 @@ jTF2.setText("" + y);
         i = Integer.parseInt(ellen);
         if (i == 5) {
             jTF2.setText("helyes");
+             ++jo;
         } else {
             jTF2.setText("rossz");
         }
         ++x;
         jTF3.setText("" + x);
+        
+  double sz = ((x *jo)*0.01);
     
-    }//GEN-LAST:event_jButton1ActionPerformed
+  jTF4.setText(""+sz);
+    }//GEN-LAST:event_ellenorzesActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jText1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_jText1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-                JTextField jTF = jTextField5;
+    private void segitsegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_segitsegActionPerformed
+                JTextField jTF = jText5;
                 jTF.setText("5");
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_segitsegActionPerformed
 
     /**
      * @param args the command line arguments
@@ -420,9 +415,7 @@ jTF2.setText("" + y);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton ellenorzes;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -430,24 +423,26 @@ jTF2.setText("" + y);
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jText1;
+    private javax.swing.JTextField jText10;
+    private javax.swing.JTextField jText2;
+    private javax.swing.JTextField jText3;
+    private javax.swing.JTextField jText4;
+    private javax.swing.JTextField jText5;
+    private javax.swing.JTextField jText7;
+    private javax.swing.JTextField jText8;
+    private javax.swing.JTextField jText9;
+    private javax.swing.JMenu menu;
+    private javax.swing.JMenuBar menuBar;
+    private javax.swing.JMenuItem menuItem1;
+    private javax.swing.JMenuItem menuItem2;
+    private javax.swing.JMenuItem menuItem3;
+    private javax.swing.JMenuItem menuItem4;
+    private javax.swing.JButton segitseg;
+    private javax.swing.JButton ujFrladat;
     // End of variables declaration//GEN-END:variables
 }
